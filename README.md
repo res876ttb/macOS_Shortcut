@@ -2,9 +2,9 @@
 
 ## Requirement
 
-[AutoHotkey](https://autohotkey.com/download/)
-
-Or, download the release binary.
+* Download [AutoHotkey](https://autohotkey.com/download/)
+  * After install AutoHotkey, double click the .ahk file to execute the script
+* Or, download the [release binary](https://github.com/res876ttb/macOS_Shortcut/releases).
 
 ## Disabled keys
 
