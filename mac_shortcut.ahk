@@ -1,3 +1,8 @@
+; Filename: mac_shortcut.ahk
+; Goal of this script
+;   Remap windows shortcuts into mac shortcuts
+; Version: 1.1
+
 ifShortcutActivate() {
   ; black list
   if (WinActive("ahk_exe some_application.exe")) {
