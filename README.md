@@ -57,3 +57,5 @@ Or, download the release binary.
 | Select window (chrome)                             | alt + 0~9               |
 | Typora: toggle source code mode                    | alt + /                 |
 | Wave symbol (for keyboard with special layout)     | shift + esc             |
+| Increase indent (for vscode)                       | alt + [                 |
+| Decrease indent (for vscode)                       | alt + ]                 |
