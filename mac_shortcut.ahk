@@ -58,8 +58,8 @@ AppsKey::SendInput {RWin}
 #If
 
 #If, ifVscodeActive() && ifShortcutActivate()
-  ![::SendInput ^{Left}
-  !]::SendInput ^{Right}
+  ![::SendInput ^[
+  !]::SendInput ^]
   #Up::SendInput !{Up}
   #Down::SendInput !{Down}
   return
