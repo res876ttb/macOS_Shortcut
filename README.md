@@ -6,6 +6,10 @@
 
 Or, download the release binary.
 
+## Disabled keys
+
+This script will disable left windows key and alt key. However, application key will be replaced with windows key.
+
 ## Shortcut Conversion List
 
 | Function                                                 | Shortcut                 |
