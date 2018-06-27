@@ -60,6 +60,9 @@ AppsKey::SendInput {RWin}
 #If, ifVscodeActive() && ifShortcutActivate()
   ![::SendInput ^{Left}
   !]::SendInput ^{Right}
+  #Up::SendInput !{Up}
+  #Down::SendInput !{Down}
+  return
 #If
 
 #If, !ifX11Active() && ifShortcutActivate()
@@ -92,6 +95,11 @@ AppsKey::SendInput {RWin}
 #If, !ifVscodeActive() && ifShortcutActivate()
   ![::SendInput !{Left}
   !]::SendInput !{Right}
+  !Up::SendInput ^{Home}
+  !Down::SendInput ^{End}
+  !+Up::SendInput ^+{Home}
+  !+Down::SendInput ^+{End}
+  return
 #If
 
 #If, ifShortcutActivate()

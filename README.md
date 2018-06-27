@@ -67,3 +67,7 @@ This script will disable left windows key and alt key. However, application key 
 | Wave symbol (for keyboard with special layout)           | shift + esc              |
 | Increase indent (for vscode)                             | alt + [                  |
 | Decrease indent (for vscode)                             | alt + ]                  |
+| Swap current line with previous line (for vscode)        | windows + up             |
+| Swap current line with next line (for vscode)            | windows + down           |
+| Jump to top of the page                                  | alt + up                 |
+| Jump to bottom of the page                               | alt + down               |
