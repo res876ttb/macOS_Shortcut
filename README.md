@@ -57,7 +57,7 @@ Or, download the release binary.
 | Change input method                                | alt + space             |
 | To page top                                        | alt + up                |
 | To page bottom                                     | alt + down              |
-| Maximize window                                    | ctrl + alt + up         |
+| Maximize window                                    | ctrl + alt + f          |
 | Select window (chrome)                             | alt + 0~9               |
 | Typora: toggle source code mode                    | alt + /                 |
 | Wave symbol (for keyboard with special layout)     | shift + esc             |
