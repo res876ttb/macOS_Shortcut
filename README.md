@@ -2,7 +2,7 @@
 
 ## Requirement
 
-[autohotkey](https://autohotkey.com/download/)
+[AutoHotkey](https://autohotkey.com/download/)
 
 Or, download the release binary.
 
