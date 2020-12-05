@@ -67,6 +67,7 @@ AppsKey::SendInput {RWin}
   !]::SendInput ^]
   #Up::SendInput !{Up}
   #Down::SendInput !{Down}
+  !/::SendInput ^/
   return
 #If
 
