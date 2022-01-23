@@ -21,10 +21,10 @@ tempDisable := 0
 ^F1::
   if (tempDisable) {
     tempDisable := 0
-    TrayTip,, Enable EasyType
+    TrayTip, AHK EasyType, Enabled
   } else {
     tempDisable := 1
-    TrayTip,, Temporarily disable EasyType
+    TrayTip, AHK EasyType, Disabled
   }
   return
 
@@ -126,7 +126,6 @@ tempDisable := 0
   <#Delete::SendInput ^{Delete}
 
   ; Frequently used shortcut
-  <!,::SendInput ^,
   <!a::SendInput ^a
   <!b::SendInput ^b
   <!c::SendInput ^{Insert}
@@ -134,6 +133,7 @@ tempDisable := 0
   <!i::SendInput ^i
   <!n::SendInput ^n
   <!o::SendInput ^o
+  <!q::SendInput !{F4}
   <!r::SendInput ^r
   <!s::SendInput ^s
   <!t::SendInput ^t
@@ -142,16 +142,18 @@ tempDisable := 0
   <!w::SendInput ^w
   <!x::SendInput ^x
   <!z::SendInput ^z
+  <!,::SendInput ^,
+  <!/::SendInput ^/
   <!+n::SendInput ^+n
   <!+o::SendInput ^+o
   <!+p::SendInput ^+p
   <!+r::SendInput ^+r
   <!+t::SendInput ^+t
   <!+z::SendInput ^+z
-  <!q::SendInput !{F4}
+  <!Space::SendInput ^{Esc}
 
   ; Hotstring, awesome!!
-  :o:@@::someone10851222@gmail.com
+  :o:@@::email@email.com
 
   ; Used in terminal
   <#z::SendInput !z
