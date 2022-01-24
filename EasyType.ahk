@@ -73,6 +73,13 @@ tempDisable := 0
   <!n::SendInput +{Home}{Delete}
   <#n::SendInput ^{Delete}
 
+  a::SendInput {Left}
+  d::SendInput {Right}
+  w::SendInput {Up}
+  s::SendInput {Down}
+  z::SendInput {Home}
+  x::SendInput {End}
+
   ; Used in terminal
   u::SendInput {PgUp}
   o::SendInput {PgDn}
