@@ -169,4 +169,7 @@ tempDisable := 0
   <#\::SendInput ^b`%
   <#a::SendInput !{Left}
   <#s::SendInput !{Right}
+
+  ; For keyboard less than 83 keys
+  +Esc::SendInput ~
 #if
