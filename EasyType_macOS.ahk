@@ -1,5 +1,5 @@
 ; Filename: EasyType.ahk
-; Version: 0.1
+; Version: 0.2
 ; Tested: AutoHotKey v1.1.33.10, Windows 11 build 22000.434
 ;
 ; Note:
@@ -77,14 +77,16 @@ tempDisable := 0
   d::SendInput {Right}
   w::SendInput {Up}
   s::SendInput {Down}
-  z::SendInput {Home}
-  x::SendInput {End}
 
   ; Used in terminal
   u::SendInput {PgUp}
   o::SendInput {PgDn}
+  q::SendInput {PgUp}
+  e::SendInput {PgDn}
   m::SendInput {Home}
   ,::SendInput {End}
+  z::SendInput {Home}
+  x::SendInput {End}
 #if
 
 ; Add normal shortcut
@@ -167,9 +169,13 @@ tempDisable := 0
   <!t::SendInput !t
   <!-::SendInput ^b`"
   <!\::SendInput ^b`%
-  <!a::SendInput !{Left}
-  <!s::SendInput !{Right}
+  ; <!a::SendInput !a
+  ; <!s::SendInput !s
 
   ; For keyboard less than 83 keys
   +Esc::SendInput ~
+
+  ; Switch application in RDP
+  #`::SendInput {Blind}{PgUp}
+  #+`::SendInput {Blind}{PgDn}
 #if
