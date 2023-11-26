@@ -8,7 +8,7 @@
 ## Tested Environment
 
 * Windows 11 build 22000.434
-* AutoHotKey  1.1.33.10
+* AutoHotKey v2.0.10
 
 ## Disabled Keys
 
