@@ -20,12 +20,23 @@ capsAsPrefix := 1
 ; Set mouseModeCap to 1 if you want to move mouse via keyboard
 mouseModeCap := 1
 
+; Set excludeVdi to 1 if you want to exclude VDI from autohotkey
+excludeVdi := 1
+
 ;
 ; Programs
 ;
 
 ; Always disable caplock
 SetCapsLockState "AlwaysOff"
+
+#HotIf WinActive("ahk_exe vmware-view.exe") && excludeVdi
+
+F1::MsgBox "You pressed F1 in VDI"
+
+#HotIf !WinActive("ahk_exe vmware-view.exe")
+
+F1::MsgBox "You pressed F1 out of VDI"
 
 ; Disable this script temporarily if you want
 tempDisable := 0
@@ -186,9 +197,14 @@ tempDisable := 0
   ; For keyboard less than 83 keys
   +Esc::SendInput "~"
 
-  ; Switch application in RDP
-  !`::SendInput "{Blind}{PgUp}"
-  !+`::SendInput "{Blind}{PgDn}"
+  ; Switch application from RDP to others
+  !`::SendInput "{Blind}{Tab}"
+  !+`::SendInput "{Blind}{Tab}"
+
+; Switch application in RDP
+#HotIf !GetKeyState("CapsLock", "P") && !tempDisable && WinActive("ahk_exe mstsc.exe")
+  !Tab::SendInput "{Blind}{PgUp}"
+  !+Tab::SendInput "{Blind}{PgDn}"
 #HotIf
 
 ;
